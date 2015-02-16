@@ -35,10 +35,15 @@ angular
         redirectTo: '/'
       });
   }).run(function ($rootScope, $timeout) {
+    function updateFoundation() {
+      $(document).foundation({ offcanvas: { open_method: 'move', close_on_click: false } });
+    };
+
     $rootScope.$on('$routeChangeSuccess', function () {
-      $(document).foundation({ offcanvas: { open_method: 'move', close_on_click: false } });
+      updateFoundation();
     });
+
     $timeout(function () {
-      $(document).foundation({ offcanvas: { open_method: 'move', close_on_click: false } });
+      updateFoundation();
     }, 500);
   });
