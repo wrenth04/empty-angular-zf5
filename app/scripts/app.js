@@ -34,6 +34,11 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  }).run(function ($rootScope, $timeout) {
+    $rootScope.$on('$routeChangeSuccess', function () {
+      $(document).foundation({ offcanvas: { open_method: 'move', close_on_click: false } });
+    });
+    $timeout(function () {
+      $(document).foundation({ offcanvas: { open_method: 'move', close_on_click: false } });
+    }, 500);
   });
-
-$(document).foundation();
