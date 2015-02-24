@@ -2,12 +2,11 @@
 
 /**
  * @ngdoc function
- * @name shoait01App.controller:TitlebarCtrl
+ * @name tosUtilsApp.controller:TitlebarCtrl
  * @description
  * # TitlebarCtrl
- * Controller of the shoait01App
+ * Controller of the tosUtilsApp
  */
-angular.module('shoait01App')
+angular.module('tosUtilsApp')
   .controller('TitlebarCtrl', function ($scope) {
-    $scope.name = 'Shop';
   });

@@ -1,5 +1,5 @@
 {
-  "name": "shoait01",
+  "name": "tosUtils",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.3.0",
@@ -15,5 +15,5 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "shoait01App"
+  "moduleName": "tosUtilsApp"
 }

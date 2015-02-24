@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name shoait01App
+ * @name tosUtilsApp
  * @description
- * # shoait01App
+ * # tosUtilsApp
  *
  * Main module of the application.
  */
 angular
-  .module('shoait01App', [
+  .module('tosUtilsApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -22,14 +22,6 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .when('/shop', {
-        templateUrl: 'views/shop.html',
-        controller: 'ShopCtrl'
       })
       .otherwise({
         redirectTo: '/'
